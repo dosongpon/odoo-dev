@@ -21,3 +21,13 @@ if not provide **relation** args  odoo will auto generate table for relation
                                    string='Models',
                                    domain=[('categ_id.name', '=', 'M')])
 ```
+
+## one2many 
+sale.order.line.order_id > m2o this table
+```python
+    order_line = fields.One2many(
+        comodel_name='sale.order.line',
+        inverse_name='order_id',
+        string="Order Lines",
+        copy=True, auto_join=True)
+```
