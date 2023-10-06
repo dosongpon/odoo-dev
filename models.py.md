@@ -19,5 +19,5 @@ if not provide **relation** args  odoo will auto generate table for relation
 ```python
     product_ids = fields.Many2many('product.product',
                                    string='Models',
-                                   doamin=[('categ_id.name', '=', 'M')])
+                                   domain=[('categ_id.name', '=', 'M')])
 ```
