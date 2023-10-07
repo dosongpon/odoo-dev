@@ -1,2 +1,3 @@
 # odoo-dev
-example for each component
+
+example for each components for odoo
