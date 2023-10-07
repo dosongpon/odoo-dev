@@ -1,15 +1,12 @@
 # Security and groups
 
+category can get from list
+https://github.com/odoo/odoo/blob/16.0/odoo/addons/base/data/ir_module_category_data.xml
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- Top Level category -->
-    <record id="module_category_root_h3" model="ir.module.category">
-        <field name="name">H3</field>
-        <field name="sequence">30</field>
-        <field name="parent_id" ref=""/>
 
-    </record>
     <!-- Using cagtegory -->
     <record id="module_category_root_scp" model="ir.module.category">
         <field name="name">SCP</field>
