@@ -28,4 +28,4 @@ for very simple
     context="{'res_partner_search_mode': 'customer', 'show_address': 1, 'show_vat': True}"
     options='{"always_reload": True}'/>
 ```
-![example](/assets/widget_res_partner_many2one.png)
+![](/assets/widget_res_partner_many2one.png)
