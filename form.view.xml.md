@@ -20,6 +20,8 @@ for very simple
     <field name="date_end" widget="daterange" nolabel="1" class="oe_inline" options="{'related_start_date': 'date_start'}"/>
 </div>
 ```
+![](assets/widget_date_range.png)
+
 
 ## many2one with address
 
@@ -29,3 +31,12 @@ for very simple
     options='{"always_reload": True}'/>
 ```
 ![](/assets/widget_res_partner_many2one.png)
+
+
+
+## many2many_tags
+support form/tree
+```xml
+<field name="product_ids" widget="many2many_tags" />
+```
+![Alt text](assets/widget_many2many_tags.png)
