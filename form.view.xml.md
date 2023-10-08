@@ -20,3 +20,10 @@ for very simple
     <field name="date_end" widget="daterange" nolabel="1" class="oe_inline" options="{'related_start_date': 'date_start'}"/>
 </div>
 ```
+
+## many2one with address
+```xml
+<field name="partner_id" widget="res_partner_many2one"
+    context="{'res_partner_search_mode': 'customer', 'show_address': 1, 'show_vat': True}"
+    options='{"always_reload": True}'/>
+```
