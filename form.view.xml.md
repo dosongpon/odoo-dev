@@ -40,3 +40,26 @@ support form/tree
 <field name="product_ids" widget="many2many_tags" />
 ```
 ![Alt text](assets/widget_many2many_tags.png)
+
+
+## widget radio for selection
+
+```xml
+ <field name="type" widget="radio"/>
+```
+
+## attrs hide and show 
+can use in field,group,page
+```xml
+<field name="ins_driver_mode" widget="redio" />
+<field name="ins_driver_one_name" 
+    attrs="{'invisible': [('ins_driver_mode','=','specific')]}"/>
+```
+
+
+## groups access
+
+```xml
+<field name="company_id" groups="base.group_multi_company" optional="show" readonly="1"/>
+<field name="company_id" groups="!base.group_multi_company" invisible="1"/>
+```
