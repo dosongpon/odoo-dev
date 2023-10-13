@@ -10,6 +10,14 @@ for very simple
     </tree>
 </field>
 ```
+## simple dev with condition
+```xml
+<label for="seats_limited" string="Limit Registrations"/>
+<div>
+    <field name="seats_limited"/>
+    <span attrs="{'invisible': [('seats_limited', '=', False)], 'required': [('seats_limited', '=', False)]}">to <field name="seats_max" class="oe_inline o_input_9ch"/> Confirmed Attendees</span>
+</div>
+```
 
 ## data range
 ```xml
