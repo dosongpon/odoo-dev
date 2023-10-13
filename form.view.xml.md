@@ -18,6 +18,7 @@ for very simple
     <span attrs="{'invisible': [('seats_limited', '=', False)], 'required': [('seats_limited', '=', False)]}">to <field name="seats_max" class="oe_inline o_input_9ch"/> Confirmed Attendees</span>
 </div>
 ```
+![Alt text](assets/field_div_bool_hide_show.gif)
 
 ## data range
 ```xml
