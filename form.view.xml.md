@@ -10,7 +10,7 @@ for very simple
     </tree>
 </field>
 ```
-## simple dev with condition
+## simple div with condition
 ```xml
 <label for="seats_limited" string="Limit Registrations"/>
 <div>
