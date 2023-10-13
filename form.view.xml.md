@@ -60,7 +60,7 @@ support form/tree
 ## attrs hide and show 
 can use in field,group,page
 ```xml
-<field name="ins_driver_mode" widget="redio" />
+<field name="ins_driver_mode" widget="radio" />
 <field name="ins_driver_one_name" 
     attrs="{'invisible': [('ins_driver_mode','=','specific')]}"/>
 ```
@@ -101,3 +101,12 @@ can use in field,group,page
     domain="['|', ('parent_id', '=', False), ('is_company', '=', True)]"
     attrs="{'column_invisible': [('parent.move_type', '!=', 'entry')]}"/>
 ```
+
+
+## selection radio horizontal
+options="{'horizontal': true}"
+```xml
+<field name="purchase_type" widget="radio" options="{'horizontal': true}" />
+
+```
+![Alt text](field_widget_radio_horizontal.png)
