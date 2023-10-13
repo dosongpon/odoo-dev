@@ -72,3 +72,32 @@ can use in field,group,page
 <field name="company_id" groups="base.group_multi_company" optional="show" readonly="1"/>
 <field name="company_id" groups="!base.group_multi_company" invisible="1"/>
 ```
+
+## group arrange with 4 colums
+
+```xml
+<group>
+    <group name="group_book_car" string="รายละเอียดการจองรถ">
+        <field name="booking_id" />
+        <field name="booking_date" />
+        <field name="si_invoice_ref" />
+        <field name="si_invoice_date" />
+    </group>
+    <group class="mt48">
+        <field name="engine_no" />
+        <field name="vehicle_id" />
+        <field name="actual_delivery_date" />
+    </group>
+</group>
+```
+![Alt text](assets/form_group_4_col.png)
+
+
+## tree column hide / invisible
+ need field in period record
+```xml
+<field name="partner_id"
+    optional="show"
+    domain="['|', ('parent_id', '=', False), ('is_company', '=', True)]"
+    attrs="{'column_invisible': [('parent.move_type', '!=', 'entry')]}"/>
+```
