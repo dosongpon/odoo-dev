@@ -31,3 +31,21 @@ sale.order.line.order_id > m2o this table
         string="Order Lines",
         copy=True, auto_join=True)
 ```
+
+## selection
+```python
+    state = fields.Selection([
+        ('draft', 'Draft'),
+        ('in', 'Incoming'),
+        ('ready', 'Ready'),
+        ('sold', 'Sold'),
+    ], string='Status', default='sold')
+```
+
+## group access in models field
+example show field boolean which allow group to access
+
+```python
+is_need_gas = fields.Boolean('Need GAS',
+                                 groups='doh3_pdi.group_user')
+```
