@@ -110,3 +110,14 @@ options="{'horizontal': true}"
 
 ```
 ![Alt text](field_widget_radio_horizontal.png)
+
+
+## time widget using float
+python
+```python
+ship_time = fields.Float('เวลาขนส่ง')  # use float_time widget
+```
+xml
+```xml
+<field name="ship_time" widget="float_time"/>
+```

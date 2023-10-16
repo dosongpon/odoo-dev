@@ -49,3 +49,15 @@ example show field boolean which allow group to access
 is_need_gas = fields.Boolean('Need GAS',
                                  groups='doh3_pdi.group_user')
 ```
+
+## allow search fields from many2one
+
+**_rec_names_search**
+given list of fields to combine in many2one search without create function name_search
+
+```python
+class pdi_claim_group(models.Model):
+    _name = 'pdi.claim.group'
+    _description = 'Claim Group'
+    _rec_names_search = ['code', 'name']
+```
